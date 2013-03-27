@@ -7,11 +7,11 @@ require "arigato_rails/version"
 Gem::Specification.new do |s|
   s.name        = "arigato_rails"
   s.version     = ArigatoRails::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of ArigatoRails."
-  s.description = "TODO: Description of ArigatoRails."
+  s.authors     = ["tnantoka"]
+  s.email       = ["bornneet@livedoor.com"]
+  s.homepage    = "https://github.com/tnantoka/arigato_rails#readme"
+  s.summary     = 'Auto Generated Special Thanks Page for Rails'
+  s.description = "Provide special thanks page generated from your Gemfile."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
@@ -19,4 +19,6 @@ Gem::Specification.new do |s|
   # s.add_dependency "jquery-rails"
 
   s.add_development_dependency "sqlite3"
+  s.add_development_dependency "rspec-rails"
+  s.add_development_dependency "capybara"
 end
