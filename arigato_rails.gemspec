@@ -10,15 +10,19 @@ Gem::Specification.new do |s|
   s.authors     = ["tnantoka"]
   s.email       = ["bornneet@livedoor.com"]
   s.homepage    = "https://github.com/tnantoka/arigato_rails#readme"
-  s.summary     = 'Auto Generated Special Thanks Page for Rails'
-  s.description = "Provide special thanks page generated from your Gemfile."
+  s.summary     = 'Auto generated special thanks page for Rails'
+  s.description = "Provides special thanks page generated from your Gemfile."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
   s.add_dependency "rails", "~> 3.2.13"
   # s.add_dependency "jquery-rails"
+  s.add_dependency "arigato"
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "rspec-rails"
   s.add_development_dependency "capybara"
+  s.add_development_dependency 'simplecov'
+  s.add_development_dependency 'coveralls'
+
 end
