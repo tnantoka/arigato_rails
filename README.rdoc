@@ -14,6 +14,7 @@
 == Description
 
 Auto generated special thanks page for Rails
+
 See also: {arigato gem}[https://github.com/tnantoka/arigato]
 
 == Features
@@ -22,8 +23,8 @@ Provides special thanks page generated from your Gemfile.
 
 == Examples
 
-http://arigato_rails_example.tobioka.net/thanks
-https://github.com/tnantoka/arigato_rails_example
+* http://arigato_rails_example.tobioka.net/thanks
+* https://github.com/tnantoka/arigato_rails_example
 
 == Requirements
 
