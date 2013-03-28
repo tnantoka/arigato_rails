@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
-  s.add_dependency "rails", "~> 3.2.13"
+  s.add_dependency "rails"
   # s.add_dependency "jquery-rails"
   s.add_dependency "arigato"
 
@@ -24,5 +24,9 @@ Gem::Specification.new do |s|
   s.add_development_dependency "capybara"
   s.add_development_dependency 'simplecov'
   s.add_development_dependency 'coveralls'
+
+  s.add_development_dependency 'less-rails'
+  s.add_development_dependency 'therubyracer'
+  s.add_development_dependency 'twitter-bootstrap-rails'
 
 end

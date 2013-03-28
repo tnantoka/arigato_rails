@@ -10,7 +10,10 @@ module ArigatoRails
       it 'is in /thanks' do
         expect(current_path).to eq('/thanks')
       end
-      it 'contains title' do
+      it 'has title' do
+        expect(find('title').native.text).to have_content('Special Thanks')
+      end
+      it 'contains header' do
         expect(page).to have_content('Special Thanks')
       end
       it 'contains spec name' do

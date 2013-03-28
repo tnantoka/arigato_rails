@@ -1,3 +1,51 @@
 = ArigatoRails
 
-This project rocks and uses MIT-LICENSE.
+{<img src="https://travis-ci.org/tnantoka/arigato_rails.png?branch=master" alt="Build Status" />}[https://travis-ci.org/tnantoka/arigato_rails]
+{<img src="https://coveralls.io/repos/tnantoka/arigato_rails/badge.png?branch=master" alt="Coverage Status" />}[https://coveralls.io/r/tnantoka/arigato_rails]
+{<img src="https://gemnasium.com/tnantoka/arigato_rails.png" alt="Dependency Status" />}[https://gemnasium.com/tnantoka/arigato_rails]
+{<img src="https://codeclimate.com/github/tnantoka/arigato_rails.png" alt="Code Climate" />}[https://codeclimate.com/github/tnantoka/arigato_rails]
+{<img src="http://api.coderwall.com/tnantoka/endorsecount.png" alt="endorse" />}[http://coderwall.com/tnantoka]
+
+* {Homepage}[https://github.com/tnantoka/arigato_rails#readme]
+* {Issues}[https://github.com/tnantoka/arigato_rails/issues]
+* {Documentation}[http://rubydoc.info/gems/arigato_rails/frames]
+* {Email}[mailto:bornneet at livedoor.com]
+
+== Description
+
+Auto generated special thanks page for Rails
+See also: {arigato gem}[https://github.com/tnantoka/arigato]
+
+== Features
+
+Provides special thanks page generated from your Gemfile.
+
+== Examples
+
+http://arigato_rails_example.tobioka.net/thanks
+https://github.com/tnantoka/arigato_rails_example
+
+== Requirements
+
+* Ruby 1.9+ 
+* Rails 3.2+ 
+
+== Install
+
+  # Gemfile
+  gem 'arigato_rails'
+  $ bundle install
+  
+  # config/initializers/arigato_rails.rb
+  Rails.configuration.arigato_rails.theme = 'bootstrap'
+
+  # Optional 
+  # config/routes.rb 
+  mount_thanks
+  resources :users, path: '' # catch-all routes
+
+== Copyright
+
+Copyright (c) 2013 tnantoka
+
+See LICENSE.txt for details.
