@@ -2,5 +2,7 @@ language: ruby
 rvm:
   - "1.9.3"
 before_script:
+  - rm spec/dummy/config/database.yml
+  - cp spec/dummy/config/.database.travis.yml spec/dummy/config/database.yml
   - RAILS_ENV=test bundle exec rake --trace db:create
 script: RAILS_ENV=test bundle exec rake --trace db:migrate spec
