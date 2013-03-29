@@ -35,15 +35,18 @@ Provides special thanks page generated from your Gemfile.
 
   # Gemfile
   gem 'arigato_rails'
-  $ bundle install
+  $ bundle
   
   # config/initializers/arigato_rails.rb
   Rails.configuration.arigato_rails.theme = 'bootstrap'
 
-  # Optional 
+  # Optional  
   # config/routes.rb 
-  mount_thanks
-  resources :users, path: '' # catch-all routes
+  mount_thanks               # should add before
+  resources :users, path: '' # the catch-all routes 
+
+  # View
+  <%= link_to 'Special Thanks', main_app.thanks_path %>
 
 == Copyright
 
