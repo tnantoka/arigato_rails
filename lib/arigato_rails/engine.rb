@@ -1,6 +1,6 @@
 module ArigatoRails
   class Engine < ::Rails::Engine
-    isolate_namespace ArigatoRails
+    #isolate_namespace ArigatoRails
     
     config.arigato_rails = ActiveSupport::OrderedOptions.new
     config.arigato_rails.theme = 'default'

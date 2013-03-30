@@ -1,2 +1,2 @@
-class ApplicationController < ActionController::Base
+class ArigatoRails::ApplicationController < ApplicationController
 end
